@@ -2622,7 +2622,7 @@ end
 end,nil)  
 end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then       
-Text = "𝙒𝙀𝙇𝘾𝙊𝙈𝙀 𝙏𝙊 devyousef\n\n[dev yousef ](http://t.me/labban1)\n\n[𝙐𝙥𝙙𝙖𝙩𝙚𝙨 dev ](http://t.me/labban1)\n\n[𝙤𝙪𝙧𝙘𝙚 ](http://t.me/labban1)"
+Text = "𝙒𝙀𝙇𝘾𝙊𝙈𝙀 𝙏𝙊 devyousef\n\n[dev yousef ](http://t.me/labban1)\n\n[𝙐𝙥𝙙𝙖𝙩𝙚𝙨 dev ](http://t.me/labban1)\n\n[s𝙤𝙪𝙧𝙘𝙚 ](http://t.me/labban1)"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'dev yousef .',url="https://t.me/labban1"}},
