@@ -147,7 +147,7 @@ print([[
   ⇑━━Larfen━━⇓
 ✓                     ✓
 > CH › @labban1
-~> DEVELOPER › @III_DD
+~> DEVELOPER › @labban1
 ]])
 sudos = dofile("./Info.lua") 
 SUDO = tonumber(sudos.SUDO)
@@ -2622,10 +2622,10 @@ end
 end,nil)  
 end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then       
-Text = "𝙒𝙀𝙇𝘾𝙊𝙈𝙀 𝙏𝙊 devyousef\n\n[dev yousef ](http://t.me/labban1)\n\n[𝙐𝙥𝙙𝙖𝙩𝙚𝙨 𝙡𝙖𝙧𝙛𝙚𝙣 ](http://t.me/labban1)\n\n[𝙏𝙬𝙎 𝙎𝙤𝙪𝙧𝙘𝙚 ](http://t.me/g_ngbot)"
+Text = "𝙒𝙀𝙇𝘾𝙊𝙈𝙀 𝙏𝙊 devyousef\n\n[dev yousef ](http://t.me/labban1)\n\n[𝙐𝙥𝙙𝙖𝙩𝙚𝙨 dev ](http://t.me/labban1)\n\n[𝙏𝙬𝙎 𝙎𝙤𝙪𝙧𝙘𝙚 ](http://t.me/g_ngbot)"
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝘿𝙚𝙫 𝙡𝙖𝙧𝙛𝙚𝙣 .',url="https://t.me/III_DD"}},
+{{text = 'dev yousef .',url="https://t.me/labban1"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
