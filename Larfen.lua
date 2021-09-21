@@ -898,7 +898,7 @@ local start = database:get(bot_id.."Start:Bot")
 if start then 
 SourceLarfenr = start
 else
-SourceLarfenr = ' ꙳.︙اهلا عزيزي\n ꙳.︙انا بوت اسمي ' ..Namebot..'\n ꙳.︙اختصاصي حمايه القروبات\n ꙳.︙من تكرار والسبام والتوجيه والخ…\n ꙳.︙لتفعيلي اتبع الاخطوات…↓\n ꙳.︙اضفني الي مجموعتك وقم بترقيتي ادمن واكتب كلمه { تفعيل }  ويستطيع »{ منشئ او المشرفين } بتفعيل فقط\n[ ꙳.︙معرف المطور ['..UserName..']'
+SourceLarfenr = ' ꙳.︙اهلا عزيزي\n ꙳.︙انا بوت اسمي ' ..Namebot..'\n ꙳.︙اختصاصي حماية القروبات\n ꙳.︙من تكرار والسبام والتوجيه والخ…\n ꙳.︙لتفعيلي اتبع الاخطوات…↓\n ꙳.︙اضفني الي مجموعتك وقم بترقيتي ادمن واكتب كلمه { تفعيل }  ويستطيع »{ منشئ او المشرفين } بتفعيل فقط\n[ ꙳.︙معرف المطور ['..UserName..']'
 end 
 send(msg.chat_id_, msg.id_, SourceLarfenr) 
 end
@@ -2739,10 +2739,10 @@ database:del(bot_id.."Set:Cmd:Group1"..msg.chat_id_..':'..msg.sender_user_id_)
 return false
 end
 --------------------------------------------------------------------------------------------------------------
-if text == 'قفل الدردشه' and msg.reply_to_message_id_ == 0 and Manager(msg) then 
+if text == 'قفل الدردشة' and msg.reply_to_message_id_ == 0 and Manager(msg) then 
 database:set(bot_id.."lock:text"..msg.chat_id_,true) 
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)  
-send(msg.chat_id_, msg.id_,' ꙳.︙بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'labban1')..') \n ꙳.︙تـم قفـل الدردشه ')
+send(msg.chat_id_, msg.id_,' ꙳.︙بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'labban1')..') \n ꙳.︙تـم قفـل الدردشة ')
 end,nil)   
 elseif text == 'قفل الاضافه' and msg.reply_to_message_id_ == 0 and Mod(msg) then 
 database:set(bot_id.."lock:AddMempar"..msg.chat_id_,'kick')  
@@ -2837,10 +2837,10 @@ database:del(bot_id.."lock:AddMempar"..msg.chat_id_)
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
 send(msg.chat_id_, msg.id_,' ꙳.︙بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'labban1')..') \n ꙳.︙تـم فتح اضافة ')
 end,nil)   
-elseif text == 'فتح الدردشه' and msg.reply_to_message_id_ == 0 and Manager(msg) then 
+elseif text == 'فتح الدردشة' and msg.reply_to_message_id_ == 0 and Manager(msg) then 
 database:del(bot_id.."lock:text"..msg.chat_id_)  
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,' ꙳.︙بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'labban1')..') \n ꙳.︙تـم فتح الدردشه ')
+send(msg.chat_id_, msg.id_,' ꙳.︙بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'labban1')..') \n ꙳.︙تـم فتح الدردشة ')
 end,nil)   
 elseif text == 'فتح الدخول' and msg.reply_to_message_id_ == 0 and Mod(msg) then 
 database:del(bot_id.."lock:Join"..msg.chat_id_)  
@@ -2956,75 +2956,75 @@ send(msg.chat_id_, msg.id_,' ꙳.︙بواسطه » ['..Rutba(msg.sender_user_id
 end,nil)   
 end
 
-if text == 'تفعيل نسبه الحب' and Manager(msg) then   
+if text == 'تفعيل نسبة الحب' and Manager(msg) then   
 if database:get(bot_id..'Cick:lov'..msg.chat_id_) then
-Text = ' ꙳.︙تم تفعيل نسبه الحب'
+Text = ' ꙳.︙تم تفعيل نسبة الحب'
 database:del(bot_id..'Cick:lov'..msg.chat_id_)  
 else
-Text = ' ꙳.︙بالتاكيد تم تفعيل نسبه الحب'
+Text = ' ꙳.︙بالتاكيد تم تفعيل نسبة الحب'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تعطيل نسبه الحب' and Manager(msg) then  
+if text == 'تعطيل نسبة الحب' and Manager(msg) then  
 if not database:get(bot_id..'Cick:lov'..msg.chat_id_) then
 database:set(bot_id..'Cick:lov'..msg.chat_id_,true)  
-Text = '\n ꙳.︙تم تعطيل نسبه الحب'
+Text = '\n ꙳.︙تم تعطيل نسبة الحب'
 else
-Text = '\n ꙳.︙بالتاكيد تم تعطيل نسبه الحب'
+Text = '\n ꙳.︙بالتاكيد تم تعطيل نسبة الحب'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تفعيل نسبه الرجوله' and Manager(msg) then   
+if text == 'تفعيل نسبة الرجولة' and Manager(msg) then   
 if database:get(bot_id..'Cick:rjo'..msg.chat_id_) then
-Text = ' ꙳.︙تم تفعيل نسبه الرجوله'
+Text = ' ꙳.︙تم تفعيل نسبة الرجولة'
 database:del(bot_id..'Cick:rjo'..msg.chat_id_)  
 else
-Text = ' ꙳.︙بالتاكيد تم تفعيل الرجوله'
+Text = ' ꙳.︙بالتاكيد تم تفعيل الرجولة'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تعطيل نسبه الرجوله' and Manager(msg) then  
+if text == 'تعطيل نسبة الرجولة' and Manager(msg) then  
 if not database:get(bot_id..'Cick:rjo'..msg.chat_id_) then
 database:set(bot_id..'Cick:rjo'..msg.chat_id_,true)  
-Text = '\n ꙳.︙تم تعطيل نسبه الرجوله'
+Text = '\n ꙳.︙تم تعطيل نسبة الرجولة'
 else
-Text = '\n ꙳.︙بالتاكيد تم تعطيل نسبه الرجوله'
+Text = '\n ꙳.︙بالتاكيد تم تعطيل نسبة الرجولة'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تفعيل نسبه الكره' and Manager(msg) then   
+if text == 'تفعيل نسبة الكره' and Manager(msg) then   
 if database:get(bot_id..'Cick:krh'..msg.chat_id_) then
-Text = ' ꙳.︙تم تفعيل نسبه الكره'
+Text = ' ꙳.︙تم تفعيل نسبة الكره'
 database:del(bot_id..'Cick:krh'..msg.chat_id_)  
 else
-Text = ' ꙳.︙بالتاكيد تم تفعيل نسبه الكره'
+Text = ' ꙳.︙بالتاكيد تم تفعيل نسبة الكره'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تعطيل نسبه الكره' and Manager(msg) then  
+if text == 'تعطيل نسبة الكره' and Manager(msg) then  
 if not database:get(bot_id..'Cick:krh'..msg.chat_id_) then
 database:set(bot_id..'Cick:krh'..msg.chat_id_,true)  
-Text = '\n ꙳.︙تم تعطيل نسبه الكره'
+Text = '\n ꙳.︙تم تعطيل نسبة الكره'
 else
-Text = '\n ꙳.︙بالتاكيد تم تعطيل نسبه الكره'
+Text = '\n ꙳.︙بالتاكيد تم تعطيل نسبة الكره'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تفعيل نسبه الانوثه' and Manager(msg) then   
+if text == 'تفعيل نسبة الانوثة' and Manager(msg) then   
 if database:get(bot_id..'Cick:ano'..msg.chat_id_) then
-Text = ' ꙳.︙تم تفعيل نسبه الانوثه'
+Text = ' ꙳.︙تم تفعيل نسبة الانوثة'
 database:del(bot_id..'Cick:ano'..msg.chat_id_)  
 else
-Text = ' ꙳.︙بالتاكيد تم تفعيل الانوثه'
+Text = ' ꙳.︙بالتاكيد تم تفعيل الانوثة'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تعطيل نسبه الانوثه' and Manager(msg) then  
+if text == 'تعطيل نسبة الانوثة' and Manager(msg) then  
 if not database:get(bot_id..'Cick:ano'..msg.chat_id_) then
 database:set(bot_id..'Cick:ano'..msg.chat_id_,true)  
-Text = '\n ꙳.︙تم تعطيل نسبه الانوثه'
+Text = '\n ꙳.︙تم تعطيل نسبة الانوثة'
 else
-Text = '\n ꙳.︙بالتاكيد تم تعطيل نسبه الانوثه'
+Text = '\n ꙳.︙بالتاكيد تم تعطيل نسبة الانوثة'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
@@ -7930,7 +7930,7 @@ local text =
 ' }\n'..' ꙳.︙الاغاني » { '..lock_vico..
 ' }\n'..' ꙳.︙المتحركه » { '..lock_gif..
 ' }\n'..' ꙳.︙الملفات » { '..lock_file..
-' }\n'..' ꙳.︙الدردشه » { '..lock_text..
+' }\n'..' ꙳.︙الدردشة » { '..lock_text..
 ' }\n'..' ꙳.︙الفيديو » { '..lock_ved..
 ' }\n'..' ꙳.︙الصور » { '..lock_photo..
 ' }\nء⋆ ┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉ ⋆'..
@@ -10700,12 +10700,12 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, mode.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n ꙳.︙ايديك ~⪼ '..msg.sender_user_id_..'\n ꙳.︙معرفك ~⪼ '..username..'\n ꙳.︙رتبتك ~⪼ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n ꙳.︙موقعك ~⪼ '..rtpa..'\n ꙳.︙تفاعلك ~⪼ '..Total_Msg(Msguser)..'\n ꙳.︙رسائلك ~⪼ '..Msguser..'\n ꙳.︙نسبه تفاعلك ~⪼ '..string.sub(nspatfa, 1,5)..' %\n ꙳.︙السحكات ~⪼ '..edit..'\n ꙳.︙نقاطك ~⪼ '..NUMPGAME..'\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, mode.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n ꙳.︙ايديك ~⪼ '..msg.sender_user_id_..'\n ꙳.︙معرفك ~⪼ '..username..'\n ꙳.︙رتبتك ~⪼ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n ꙳.︙موقعك ~⪼ '..rtpa..'\n ꙳.︙تفاعلك ~⪼ '..Total_Msg(Msguser)..'\n ꙳.︙رسائلك ~⪼ '..Msguser..'\n ꙳.︙نسبة تفاعلك ~⪼ '..string.sub(nspatfa, 1,5)..' %\n ꙳.︙السحكات ~⪼ '..edit..'\n ꙳.︙نقاطك ~⪼ '..NUMPGAME..'\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_,'[\n ꙳.︙ايديك ~⪼ '..msg.sender_user_id_..'\n ꙳.︙معرفك ~⪼ '..username..'\n ꙳.︙رتبتك ~⪼ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n ꙳.︙موقعك ~⪼ '..rtpa..'\n ꙳.︙تفاعلك ~⪼ '..Total_Msg(Msguser)..'\n ꙳.︙رسائلك ~⪼ '..Msguser..'\n ꙳.︙نسبه  تفاعلك ~⪼ '..string.sub(nspatfa, 1,5)..' %\n ꙳.︙السحكات ~⪼ '..edit..'\n ꙳.︙نقاطك ~⪼ '..NUMPGAME..']\n')
+send(msg.chat_id_, msg.id_,'[\n ꙳.︙ايديك ~⪼ '..msg.sender_user_id_..'\n ꙳.︙معرفك ~⪼ '..username..'\n ꙳.︙رتبتك ~⪼ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n ꙳.︙موقعك ~⪼ '..rtpa..'\n ꙳.︙تفاعلك ~⪼ '..Total_Msg(Msguser)..'\n ꙳.︙رسائلك ~⪼ '..Msguser..'\n ꙳.︙نسبة  تفاعلك ~⪼ '..string.sub(nspatfa, 1,5)..' %\n ꙳.︙السحكات ~⪼ '..edit..'\n ꙳.︙نقاطك ~⪼ '..NUMPGAME..']\n')
 else
-send(msg.chat_id_, msg.id_, '\n ꙳.︙الصوره ~⪼ ليس لديك صور في حسابك'..'[\n ꙳.︙ايديك ~⪼ '..msg.sender_user_id_..'\n ꙳.︙معرفك ~⪼ '..username..'\n ꙳.︙رتبتك ~⪼ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n ꙳.︙موقعك ~⪼ '..rtpa..'\n ꙳.︙تفاعلك ~⪼ '..Total_Msg(Msguser)..'\n ꙳.︙رسائلك ~⪼ '..Msguser..'\n ꙳.︙نسبه تفاعلك ~⪼ '..string.sub(nspatfa, 1,5)..' %\n ꙳.︙السحكات ~⪼ '..edit..'\n ꙳.︙نقاطك ~⪼ '..NUMPGAME..']\n')
+send(msg.chat_id_, msg.id_, '\n ꙳.︙الصوره ~⪼ ليس لديك صور في حسابك'..'[\n ꙳.︙ايديك ~⪼ '..msg.sender_user_id_..'\n ꙳.︙معرفك ~⪼ '..username..'\n ꙳.︙رتبتك ~⪼ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n ꙳.︙موقعك ~⪼ '..rtpa..'\n ꙳.︙تفاعلك ~⪼ '..Total_Msg(Msguser)..'\n ꙳.︙رسائلك ~⪼ '..Msguser..'\n ꙳.︙نسبة تفاعلك ~⪼ '..string.sub(nspatfa, 1,5)..' %\n ꙳.︙السحكات ~⪼ '..edit..'\n ꙳.︙نقاطك ~⪼ '..NUMPGAME..']\n')
 end 
 end
 end
@@ -10723,7 +10723,7 @@ get_id_text = get_id_text:gsub('#game',NUMPGAME)
 get_id_text = get_id_text:gsub('#photos',photps) 
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_,'[\n ꙳.︙ايديك ~⪼ '..msg.sender_user_id_..'\n ꙳.︙معرفك ~⪼ '..username..'\n ꙳.︙رتبتك ~⪼ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n ꙳.︙موقعك ~⪼ '..rtpa..'\n ꙳.︙تفاعلك ~⪼ '..Total_Msg(Msguser)..'\n ꙳.︙رسائلك ~⪼ '..Msguser..'\n ꙳.︙نسبه تفاعلك ~⪼ '..string.sub(nspatfa, 1,5)..' %\n ꙳.︙السحكات ~⪼ '..edit..'\n ꙳.︙نقاطك ~⪼ '..NUMPGAME..']\n')
+send(msg.chat_id_, msg.id_,'[\n ꙳.︙ايديك ~⪼ '..msg.sender_user_id_..'\n ꙳.︙معرفك ~⪼ '..username..'\n ꙳.︙رتبتك ~⪼ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n ꙳.︙موقعك ~⪼ '..rtpa..'\n ꙳.︙تفاعلك ~⪼ '..Total_Msg(Msguser)..'\n ꙳.︙رسائلك ~⪼ '..Msguser..'\n ꙳.︙نسبة تفاعلك ~⪼ '..string.sub(nspatfa, 1,5)..' %\n ꙳.︙السحكات ~⪼ '..edit..'\n ꙳.︙نقاطك ~⪼ '..NUMPGAME..']\n')
 end
 end
 
@@ -11369,7 +11369,7 @@ local Teext =[[
 ꙳.︙الملصقات
 ꙳.︙الفيديو
 ꙳.︙الانلاين
-꙳.︙الدردشه
+꙳.︙الدردشة
 ⋆ ┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉ ⋆
 ꙳.︙التوجيه
 ꙳.︙الاغاني
@@ -11431,9 +11431,9 @@ local Teext =[[
 ꙳.︙ٴall
 ꙳.︙الردود
 ꙳.︙نسبة الحب
-꙳.︙نسبة الرجوله
-꙳.︙نسبه الانوثه 
-꙳.︙نسبه الكره
+꙳.︙نسبة الرجولة
+꙳.︙نسبة الانوثة 
+꙳.︙نسبة الكره
 ꙳.︙حساب العمر
 ꙳.︙الابراج
 ꙳.︙تنبيه الاسماء
@@ -11699,10 +11699,10 @@ local Teext =[[
 ꙳.︙التوحيد
 ꙳.︙غنيلي
 ꙳.︙قائمه المنع
-꙳.︙نسبه الحب 
-꙳.︙نسبه رجوله
-꙳.︙نسبه الكره
-꙳.︙نسبه الانوثه
+꙳.︙نسبة الحب 
+꙳.︙نسبة رجوله
+꙳.︙نسبة الكره
+꙳.︙نسبة الانوثة
 ꙳.︙الساعه
 ꙳.︙التاريخ
 ⋆ ┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉ ⋆ٴ
@@ -12295,59 +12295,59 @@ end
 if text and text:match('^'..Name_Bot..' ') then
 data.message_.content_.text_ = data.message_.content_.text_:gsub('^'..Name_Bot..' ','')
 end
-if text == "نسبه الحب" or text == "نسبه حب" and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then
+if text == "نسبة الحب" or text == "نسبة حب" and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then
 if not database:get(bot_id..'Cick:lov'..msg.chat_id_) then
 database:set(bot_id..":"..msg.sender_user_id_..":lov_Bots"..msg.chat_id_,"sendlove")
 Text = 'ارسل اسمك واسم الشخص الثاني،  \n مثال رسول و عسل'
 send(msg.chat_id_, msg.id_,Text) 
 end
 end
-if text and text ~="نسبه الحب" and database:get(bot_id..":"..msg.sender_user_id_..":lov_Bots"..msg.chat_id_) == "sendlove" then
+if text and text ~="نسبة الحب" and database:get(bot_id..":"..msg.sender_user_id_..":lov_Bots"..msg.chat_id_) == "sendlove" then
 num = {"10","20","30","35","75","34","66","82","23","19","55","8","63","32","27","89","99","98","3","80","49","100","6","0",};
 sendnum = num[math.random(#num)]
-sl = 'نسبه حب '..text..' هي : '..sendnum..'%'
+sl = 'نسبة حب '..text..' هي : '..sendnum..'%'
 send(msg.chat_id_, msg.id_,sl) 
 database:del(bot_id..":"..msg.sender_user_id_..":lov_Bots"..msg.chat_id_)
 end
-if text == "نسبه الكره" or text == "نسبه كره" and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then
+if text == "نسبة الكره" or text == "نسبة كره" and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then
 if not database:get(bot_id..'Cick:krh'..msg.chat_id_) then
 database:set(bot_id..":"..msg.sender_user_id_..":krh_Bots"..msg.chat_id_,"sendkrhe")
 Text = 'ارسل اسمك واسم الشخص الثاني،  \n مثال علوش و روان'
 send(msg.chat_id_, msg.id_,Text) 
 end
 end
-if text and text ~="نسبه الكره" and database:get(bot_id..":"..msg.sender_user_id_..":krh_Bots"..msg.chat_id_) == "sendkrhe" then
+if text and text ~="نسبة الكره" and database:get(bot_id..":"..msg.sender_user_id_..":krh_Bots"..msg.chat_id_) == "sendkrhe" then
 num = {"10","20","30","35","75","34","66","82","23","19","55","8","63","32","27","89","99","98","3","80","8","100","6","0",};
 sendnum = num[math.random(#num)]
-sl = 'نسبه كره '..text..' هي : '..sendnum..'%'
+sl = 'نسبة كره '..text..' هي : '..sendnum..'%'
 send(msg.chat_id_, msg.id_,sl) 
 database:del(bot_id..":"..msg.sender_user_id_..":krh_Bots"..msg.chat_id_)
 end
-if text == "نسبه رجوله" or text == "نسبه الرجوله" and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then
+if text == "نسبة رجوله" or text == "نسبة الرجولة" and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then
 if not database:get(bot_id..'Cick:rjo'..msg.chat_id_) then
 database:set(bot_id..":"..msg.sender_user_id_..":rjo_Bots"..msg.chat_id_,"sendrjoe")
-Text = 'ارسل اسم الشخص الذي تريد قياس نسبه رجولته \n مثال حرب'
+Text = 'ارسل اسم الشخص الذي تريد قياس نسبة رجولته \n مثال حرب'
 send(msg.chat_id_, msg.id_,Text) 
 end
 end
-if text and text ~="نسبه رجوله" and database:get(bot_id..":"..msg.sender_user_id_..":rjo_Bots"..msg.chat_id_) == "sendrjoe" then
+if text and text ~="نسبة رجوله" and database:get(bot_id..":"..msg.sender_user_id_..":rjo_Bots"..msg.chat_id_) == "sendrjoe" then
 numj = {"10","20","30","35","75","34","66","82","23","19","55","80","63","32","27","89","99","98","79","100","8","3","6","0",};
 sendnuj = numj[math.random(#numj)]
-xl = 'نسبه رجوله '..text..' هي : \n '..sendnuj..'%'
+xl = 'نسبة رجوله '..text..' هي : \n '..sendnuj..'%'
 send(msg.chat_id_, msg.id_,xl) 
 database:del(bot_id..":"..msg.sender_user_id_..":rjo_Bots"..msg.chat_id_)
 end
-if text == "نسبه الانوثه" or text == "نسبه انوثه" and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then
+if text == "نسبة الانوثة" or text == "نسبة انوثه" and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then
 if not database:get(bot_id..'Cick:ano'..msg.chat_id_) then
 database:set(bot_id..":"..msg.sender_user_id_..":ano_Bots"..msg.chat_id_,"sendanoe")
-Text = 'ارسل اسم الشخص الذي تريد قياس نسبه انوثتها \n مثال عذراء'
+Text = 'ارسل اسم الشخص الذي تريد قياس نسبة انوثتها \n مثال عذراء'
 send(msg.chat_id_, msg.id_,Text) 
 end
 end
-if text and text ~="نسبه الانوثه" and database:get(bot_id..":"..msg.sender_user_id_..":ano_Bots"..msg.chat_id_) == "sendanoe" then
+if text and text ~="نسبة الانوثة" and database:get(bot_id..":"..msg.sender_user_id_..":ano_Bots"..msg.chat_id_) == "sendanoe" then
 numj = {"10","20","30","35","75","34","66","82","23","19","55","80","63","32","27","89","99","98","79","100","8","3","6","0",};
 sendnuj = numj[math.random(#numj)]
-xl = 'نسبه الانوثه '..text..' هي : \n '..sendnuj..'%'
+xl = 'نسبة الانوثة '..text..' هي : \n '..sendnuj..'%'
 send(msg.chat_id_, msg.id_,xl) 
 database:del(bot_id..":"..msg.sender_user_id_..":ano_Bots"..msg.chat_id_)
 end
