@@ -11247,7 +11247,7 @@ local texting = {"دور حلوين 🤕😹","جكمه وصخه عوفها ☹�
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 end
 end
-if text == "هينه" or text == "رزله" or text == "هيني" or text == "رزلي" then
+if text == "غنيلي11" or text == "رزله" or text == "هيني" or text == "رزلي" then
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {"ولك هيو لتندك بسيادك لو بهاي 👞👈","ميستاهل اتعبي روحي ويا لانه عار","عوفه يروحي هاذا طيز يضل يمضرط🤣"}
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
