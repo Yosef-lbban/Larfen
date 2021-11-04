@@ -11086,16 +11086,16 @@ fevyousef  💭
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '⑴', callback_data="/help1"},{text = '⑵', callback_data="/help2"},{text = '⑶', callback_data="/help3"},
+{text = 'الحماية', callback_data="/help1"},{text = 'التعطيل والتعفيل', callback_data="/help2"},{text = 'ضع اضف', callback_data="/help3"},
 },
 {
-{text = '⑷', callback_data="/help4"},{text = '⑸', callback_data="/help5"},
+{text = 'مسح حذف', callback_data="/help4"},{text = 'تنزيل رفع', callback_data="/help5"},
 },
 {
-{text = '⑹', callback_data="/help6"},{text = '⑺', callback_data="/help7"},{text = '⑻', callback_data="/help8"},
+{text = 'اوامر المجموعة', callback_data="/help6"},{text = 'التحشيش', callback_data="/help7"},{text = 'المطور', callback_data="/help8"},
 },
 {
-{text = '⑼', callback_data="/help9"},{text = '⑽', callback_data="/help10"},
+{text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
 {text = 'dev yousef', url="t.me/labban1"},
@@ -11382,16 +11382,16 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '⑴', callback_data="/help1"},{text = '⑵', callback_data="/help2"},{text = '⑶', callback_data="/help3"},
+{text = 'الحماية', callback_data="/help1"},{text = 'التعطيل والتعفيل', callback_data="/help2"},{text = 'ضع اضف', callback_data="/help3"},
 },
 {
-{text = '⑷', callback_data="/help4"},{text = '⑸', callback_data="/help5"},
+{text = 'مسح حذف', callback_data="/help4"},{text = 'تنزيل رفع', callback_data="/help5"},
 },
 {
-{text = '⑹', callback_data="/help6"},{text = '⑺', callback_data="/help7"},{text = '⑻', callback_data="/help8"},
+{text = 'اوامر المجموعة', callback_data="/help6"},{text = 'التحشيش', callback_data="/help7"},{text = 'المطور', callback_data="/help8"},
 },
 {
-{text = '⑼', callback_data="/help9"},{text = '⑽', callback_data="/help10"},
+{text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
 {text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/help"},
@@ -11451,16 +11451,16 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '⑴', callback_data="/help1"},{text = '⑵', callback_data="/help2"},{text = '⑶', callback_data="/help3"},
+{text = 'الحماية', callback_data="/help1"},{text = 'التعطيل والتعفيل', callback_data="/help2"},{text = 'ضع اضف', callback_data="/help3"},
 },
 {
-{text = '⑷', callback_data="/help4"},{text = '⑸', callback_data="/help5"},
+{text = 'مسح حذف', callback_data="/help4"},{text = 'تنزيل رفع', callback_data="/help5"},
 },
 {
-{text = '⑹', callback_data="/help6"},{text = '⑺', callback_data="/help7"},{text = '⑻', callback_data="/help8"},
+{text = 'اوامر المجموعة', callback_data="/help6"},{text = 'التحشيش', callback_data="/help7"},{text = 'المطور', callback_data="/help8"},
 },
 {
-{text = '⑼', callback_data="/help9"},{text = '⑽', callback_data="/help10"},
+{text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
 {text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/help"},
@@ -11502,16 +11502,16 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '⑴', callback_data="/help1"},{text = '⑵', callback_data="/help2"},{text = '⑶', callback_data="/help3"},
+{text = 'الحماية', callback_data="/help1"},{text = 'التعطيل والتعفيل', callback_data="/help2"},{text = 'ضع اضف', callback_data="/help3"},
 },
 {
-{text = '⑷', callback_data="/help4"},{text = '⑸', callback_data="/help5"},
+{text = 'مسح حذف', callback_data="/help4"},{text = 'تنزيل رفع', callback_data="/help5"},
 },
 {
-{text = '⑹', callback_data="/help6"},{text = '⑺', callback_data="/help7"},{text = '⑻', callback_data="/help8"},
+{text = 'اوامر المجموعة', callback_data="/help6"},{text = 'التحشيش', callback_data="/help7"},{text = 'المطور', callback_data="/help8"},
 },
 {
-{text = '⑼', callback_data="/help9"},{text = '⑽', callback_data="/help10"},
+{text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
 {text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/help"},
@@ -11562,16 +11562,16 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '⑴', callback_data="/help1"},{text = '⑵', callback_data="/help2"},{text = '⑶', callback_data="/help3"},
+{text = 'الحماية', callback_data="/help1"},{text = 'التعطيل والتعفيل', callback_data="/help2"},{text = 'ضع اضف', callback_data="/help3"},
 },
 {
-{text = '⑷', callback_data="/help4"},{text = '⑸', callback_data="/help5"},
+{text = 'مسح حذف', callback_data="/help4"},{text = 'تنزيل رفع', callback_data="/help5"},
 },
 {
-{text = '⑹', callback_data="/help6"},{text = '⑺', callback_data="/help7"},{text = '⑻', callback_data="/help8"},
+{text = 'اوامر المجموعة', callback_data="/help6"},{text = 'التحشيش', callback_data="/help7"},{text = 'المطور', callback_data="/help8"},
 },
 {
-{text = '⑼', callback_data="/help9"},{text = '⑽', callback_data="/help10"},
+{text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
 {text = '↻ 𝘽𝙖??𝙠 ↺', callback_data="/help"},
@@ -11627,16 +11627,16 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '⑴', callback_data="/help1"},{text = '⑵', callback_data="/help2"},{text = '⑶', callback_data="/help3"},
+{text = 'الحماية', callback_data="/help1"},{text = 'التعطيل والتعفيل', callback_data="/help2"},{text = 'ضع اضف', callback_data="/help3"},
 },
 {
-{text = '⑷', callback_data="/help4"},{text = '⑸', callback_data="/help5"},
+{text = 'مسح حذف', callback_data="/help4"},{text = 'تنزيل رفع', callback_data="/help5"},
 },
 {
-{text = '⑹', callback_data="/help6"},{text = '⑺', callback_data="/help7"},{text = '⑻', callback_data="/help8"},
+{text = 'اوامر المجموعة', callback_data="/help6"},{text = 'التحشيش', callback_data="/help7"},{text = 'المطور', callback_data="/help8"},
 },
 {
-{text = '⑼', callback_data="/help9"},{text = '⑽', callback_data="/help10"},
+{text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
 {text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/help"},
@@ -11711,16 +11711,16 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '⑴', callback_data="/help1"},{text = '⑵', callback_data="/help2"},{text = '⑶', callback_data="/help3"},
+{text = 'الحماية', callback_data="/help1"},{text = 'التعطيل والتعفيل', callback_data="/help2"},{text = 'ضع اضف', callback_data="/help3"},
 },
 {
-{text = '⑷', callback_data="/help4"},{text = '⑸', callback_data="/help5"},
+{text = 'مسح حذف', callback_data="/help4"},{text = 'تنزيل رفع', callback_data="/help5"},
 },
 {
-{text = '⑹', callback_data="/help6"},{text = '⑺', callback_data="/help7"},{text = '⑻', callback_data="/help8"},
+{text = 'اوامر المجموعة', callback_data="/help6"},{text = 'التحشيش', callback_data="/help7"},{text = 'المطور', callback_data="/help8"},
 },
 {
-{text = '⑼', callback_data="/help9"},{text = '⑽', callback_data="/help10"},
+{text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
 {text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/help"},
@@ -11785,16 +11785,16 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '⑴', callback_data="/help1"},{text = '⑵', callback_data="/help2"},{text = '⑶', callback_data="/help3"},
+{text = 'الحماية', callback_data="/help1"},{text = 'التعطيل والتعفيل', callback_data="/help2"},{text = 'ضع اضف', callback_data="/help3"},
 },
 {
-{text = '⑷', callback_data="/help4"},{text = '⑸', callback_data="/help5"},
+{text = 'مسح حذف', callback_data="/help4"},{text = 'تنزيل رفع', callback_data="/help5"},
 },
 {
-{text = '⑹', callback_data="/help6"},{text = '⑺', callback_data="/help7"},{text = '⑻', callback_data="/help8"},
+{text = 'اوامر المجموعة', callback_data="/help6"},{text = 'التحشيش', callback_data="/help7"},{text = 'المطور', callback_data="/help8"},
 },
 {
-{text = '⑼', callback_data="/help9"},{text = '⑽', callback_data="/help10"},
+{text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
 {text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/help"},
@@ -11829,16 +11829,16 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '⑴', callback_data="/help1"},{text = '⑵', callback_data="/help2"},{text = '⑶', callback_data="/help3"},
+{text = 'الحماية', callback_data="/help1"},{text = 'التعطيل والتعفيل', callback_data="/help2"},{text = 'ضع اضف', callback_data="/help3"},
 },
 {
-{text = '⑷', callback_data="/help4"},{text = '⑸', callback_data="/help5"},
+{text = 'مسح حذف', callback_data="/help4"},{text = 'تنزيل رفع', callback_data="/help5"},
 },
 {
-{text = '⑹', callback_data="/help6"},{text = '⑺', callback_data="/help7"},{text = '⑻', callback_data="/help8"},
+{text = 'اوامر المجموعة', callback_data="/help6"},{text = 'التحشيش', callback_data="/help7"},{text = 'المطور', callback_data="/help8"},
 },
 {
-{text = '⑼', callback_data="/help9"},{text = '⑽', callback_data="/help10"},
+{text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
 {text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/help"},
@@ -11926,16 +11926,16 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '⑴', callback_data="/help1"},{text = '⑵', callback_data="/help2"},{text = '⑶', callback_data="/help3"},
+{text = 'الحماية', callback_data="/help1"},{text = 'التعطيل والتعفيل', callback_data="/help2"},{text = 'ضع اضف', callback_data="/help3"},
 },
 {
-{text = '⑷', callback_data="/help4"},{text = '⑸', callback_data="/help5"},
+{text = 'مسح حذف', callback_data="/help4"},{text = 'تنزيل رفع', callback_data="/help5"},
 },
 {
-{text = '⑹', callback_data="/help6"},{text = '⑺', callback_data="/help7"},{text = '⑻', callback_data="/help8"},
+{text = 'اوامر المجموعة', callback_data="/help6"},{text = 'التحشيش', callback_data="/help7"},{text = 'المطور', callback_data="/help8"},
 },
 {
-{text = '⑼', callback_data="/help9"},{text = '⑽', callback_data="/help10"},
+{text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
 {text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/help"},
@@ -11982,16 +11982,16 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '⑴', callback_data="/help1"},{text = '⑵', callback_data="/help2"},{text = '⑶', callback_data="/help3"},
+{text = 'الحماية', callback_data="/help1"},{text = 'التعطيل والتعفيل', callback_data="/help2"},{text = 'ضع اضف', callback_data="/help3"},
 },
 {
-{text = '⑷', callback_data="/help4"},{text = '⑸', callback_data="/help5"},
+{text = 'مسح حذف', callback_data="/help4"},{text = 'تنزيل رفع', callback_data="/help5"},
 },
 {
-{text = '⑹', callback_data="/help6"},{text = '⑺', callback_data="/help7"},{text = '⑻', callback_data="/help8"},
+{text = 'اوامر المجموعة', callback_data="/help6"},{text = 'التحشيش', callback_data="/help7"},{text = 'المطور', callback_data="/help8"},
 },
 {
-{text = '⑼', callback_data="/help9"},{text = '⑽', callback_data="/help10"},
+{text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
 {text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/help"},
@@ -12027,16 +12027,16 @@ fevyousef  💭
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '⑴', callback_data="/help1"},{text = '⑵', callback_data="/help2"},{text = '⑶', callback_data="/help3"},
+{text = 'الحماية', callback_data="/help1"},{text = 'التعطيل والتعفيل', callback_data="/help2"},{text = 'ضع اضف', callback_data="/help3"},
 },
 {
-{text = '⑷', callback_data="/help4"},{text = '⑸', callback_data="/help5"},
+{text = 'مسح حذف', callback_data="/help4"},{text = 'تنزيل رفع', callback_data="/help5"},
 },
 {
-{text = '⑹', callback_data="/help6"},{text = '⑺', callback_data="/help7"},{text = '⑻', callback_data="/help8"},
+{text = 'اوامر المجموعة', callback_data="/help6"},{text = 'التحشيش', callback_data="/help7"},{text = 'المطور', callback_data="/help8"},
 },
 {
-{text = '⑼', callback_data="/help9"},{text = '⑽', callback_data="/help10"},
+{text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
 {text = 'dev yousef', url="t.me/labban1"},
