@@ -11394,7 +11394,7 @@ keyboard.inline_keyboard = {
 {text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
-{text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/help"},
+{text = 'رجوع', callback_data="/help"},
 },
 {
 {text = 'dev yousef', url="t.me/labban1"},
@@ -11463,7 +11463,7 @@ keyboard.inline_keyboard = {
 {text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
-{text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/help"},
+{text = 'رجوع', callback_data="/help"},
 },
 {
 {text = 'dev yousef', url="t.me/labban1"},
@@ -11514,7 +11514,7 @@ keyboard.inline_keyboard = {
 {text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
-{text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/help"},
+{text = 'رجوع', callback_data="/help"},
 },
 {
 {text = 'dev yousef', url="t.me/labban1"},
@@ -11639,7 +11639,7 @@ keyboard.inline_keyboard = {
 {text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
-{text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/help"},
+{text = 'رجوع', callback_data="/help"},
 },
 {
 {text = 'dev yousef', url="t.me/labban1"},
@@ -11723,7 +11723,7 @@ keyboard.inline_keyboard = {
 {text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
-{text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/help"},
+{text = 'رجوع', callback_data="/help"},
 },
 {
 {text = 'dev yousef', url="t.me/labban1"},
@@ -11797,7 +11797,7 @@ keyboard.inline_keyboard = {
 {text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
-{text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/help"},
+{text = 'رجوع', callback_data="/help"},
 },
 {
 {text = 'dev yousef', url="t.me/labban1"},
@@ -11841,7 +11841,7 @@ keyboard.inline_keyboard = {
 {text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
-{text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/help"},
+{text = 'رجوع', callback_data="/help"},
 },
 {
 {text = 'dev yousef', url="t.me/labban1"},
@@ -11938,7 +11938,7 @@ keyboard.inline_keyboard = {
 {text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
-{text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/help"},
+{text = 'رجوع', callback_data="/help"},
 },
 {
 {text = 'dev yousef', url="t.me/labban1"},
@@ -11989,7 +11989,7 @@ keyboard.inline_keyboard = {
 {text = 'المطور الأساسي', callback_data="/help9"},{text = 'الأعضاء', callback_data="/help10"},
 },
 {
-{text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/help"},
+{text = 'رجوع', callback_data="/help"},
 },
 {
 {text = 'dev yousef', url="t.me/labban1"},
@@ -12065,7 +12065,7 @@ keyboard.inline_keyboard = {
 {text = 'تنبيه المعرف', callback_data="/change-id"},{text = 'تنبيه الصور', callback_data="/change-photo"},
 },
 {
-{text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/add"},
+{text = 'رجوع', callback_data="/add"},
 },
 {
 {text = 'dev yousef', url="t.me/labban1"},
@@ -12098,7 +12098,7 @@ keyboard.inline_keyboard = {
 {text = 'تنبيه المعرف', callback_data="/change-id"},{text = 'تنبيه الصور', callback_data="/change-photo"},
 },
 {
-{text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/add"},
+{text = 'رجوع', callback_data="/add"},
 },
 {
 {text = 'dev yousef', url="t.me/labban1"},
@@ -12128,7 +12128,7 @@ keyboard.inline_keyboard = {
 {text = 'تنبيه المعرف', callback_data="/change-id"},{text = 'تنبيه الصور', callback_data="/change-photo"},
 },
 {
-{text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/add"},
+{text = 'رجوع', callback_data="/add"},
 },
 {
 {text = 'dev yousef', url="t.me/labban1"},
@@ -12158,7 +12158,7 @@ keyboard.inline_keyboard = {
 {text = 'تنبيه المعرف', callback_data="/change-id"},{text = 'تنبيه الصور', callback_data="/change-photo"},
 },
 {
-{text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/add"},
+{text = 'رجوع', callback_data="/add"},
 },
 {
 {text = 'dev yousef', url="t.me/labban1"},
@@ -12188,7 +12188,7 @@ keyboard.inline_keyboard = {
 {text = 'تنبيه المعرف', callback_data="/change-id"},{text = 'تنبيه الصور', callback_data="/change-photo"},
 },
 {
-{text = '↻ 𝘽𝙖𝙘𝙠 ↺', callback_data="/add"},
+{text = 'رجوع', callback_data="/add"},
 },
 {
 {text = 'dev yousef', url="t.me/labban1"},
