@@ -3064,21 +3064,21 @@ Text = '\n 🇸🇦︙بالتاكيد تم تعطيل امر قول'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تفعيل غنيلي' and CoSu(msg) then   
+if text == 'تفعيل غنيلي11' and CoSu(msg) then   
 if database:get(bot_id..'sing:for:me'..msg.chat_id_) then
-Text = ' 🇸🇦︙تم تفعيل امر غنيلي الان ارسل غنيلي'
+Text = ' 🇸🇦︙تم تفعيل امر غنيلي11 الان ارسل غنيلي11'
 database:del(bot_id..'sing:for:me'..msg.chat_id_)  
 else
-Text = ' 🇸🇦︙بالتاكيد تم تفعيل امر غنيلي تستطيع ارسال غنيلي'
+Text = ' 🇸🇦︙بالتاكيد تم تفعيل امر غنيلي11 تستطيع ارسال غنيلي11'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تعطيل غنيلي' and CoSu(msg) then  
+if text == 'تعطيل غنيلي11' and CoSu(msg) then  
 if not database:get(bot_id..'sing:for:me'..msg.chat_id_) then
 database:set(bot_id..'sing:for:me'..msg.chat_id_,true)  
-Text = '\n 🇸🇦︙تم تعطيل امر غنيلي'
+Text = '\n 🇸🇦︙تم تعطيل امر غنيلي11'
 else
-Text = '\n 🇸🇦︙بالتاكيد تم تعطيل امر غنيلي'
+Text = '\n 🇸🇦︙بالتاكيد تم تعطيل امر غنيلي11'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
@@ -9765,7 +9765,7 @@ local Textxt = text:match("^قول (.*)$")
 send(msg.chat_id_, msg.id_, '['..Textxt..']')
 end
 
-if text == "غنيلي" and not database:get(bot_id.."sing:for:me"..msg.chat_id_) then
+if text == "غنيلي11" and not database:get(bot_id.."sing:for:me"..msg.chat_id_) then
 data,res = https.request('https://black-source.tk/BlackTeAM/audios.php')
 if res == 200 then
 audios = json:decode(data)
@@ -11478,7 +11478,7 @@ https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callb
 return false
 end
 local Teext =[[
-📝∫𝙿𝚄𝚃 - 𝙰𝙳𝙳 .
+📝∫اضف.
 ⋆ ┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉ ⋆
 🇸🇦︙اهلا بك عزيزي ✓ .
 🇸🇦︙اوامر الوضع - اضف ( 📌 - 📍) .
@@ -11697,7 +11697,7 @@ local Teext =[[
 🇸🇦︙تعين عدد الكتم + رقم
 🇸🇦︙كتم اسم + اسم
 🇸🇦︙التوحيد
-🇸🇦︙غنيلي
+🇸🇦︙غنيلي11
 🇸🇦︙قائمة المنع
 🇸🇦︙نسبة الحب 
 🇸🇦︙نسبة رجوله
