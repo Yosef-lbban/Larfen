@@ -2151,9 +2151,9 @@ for k,v in pairs(filter) do
 if v == msg.content_.animation_.animation_.persistent_id_ then
 tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
 if data.username_ ~= false then
-send(msg.chat_id_,0," 🇸🇦︙عذرا » {[@"..data.username_.."]}\n 🇸🇦︙عذرا تم منع المتحركه \n") 
+send(msg.chat_id_,0," 🇸🇦︙عذرا » {[@"..data.username_.."]}\n 🇸🇦︙عذرا تم منع المتحركة \n") 
 else
-send(msg.chat_id_,0," 🇸🇦︙عذرا » {["..data.first_name_.."](T.ME/labban1)}\n 🇸🇦︙عذرا تم منع المتحركه \n" ) 
+send(msg.chat_id_,0," 🇸🇦︙عذرا » {["..data.first_name_.."](T.ME/labban1)}\n 🇸🇦︙عذرا تم منع المتحركة \n" ) 
 end
 end,nil)   
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})       
@@ -2666,9 +2666,9 @@ return false
 end
 GetFile_Bot(msg)
 end
-if text == 'الاوامر المضافه' and Constructor(msg) then
+if text == 'الاوامر المضافة' and Constructor(msg) then
 local list = database:smembers(bot_id..'List:Cmd:Group:New'..msg.chat_id_..'')
-t = " 🇸🇦︙قائمه الاوامر المضافه  \n⋆ ┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉ ⋆\n"
+t = " 🇸🇦︙قائمه الاوامر المضافة  \n⋆ ┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉ ⋆\n"
 for k,v in pairs(list) do
 Cmds = database:get(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..':'..v)
 print(Cmds)
@@ -2679,18 +2679,18 @@ t = t..""..k..">> ("..v..") \n"
 end
 end
 if #list == 0 then
-t = " 🇸🇦︙لا يوجد اوامر مضافه"
+t = " 🇸🇦︙لا يوجد اوامر مضافة"
 end
 send(msg.chat_id_, msg.id_,'['..t..']')
 end
-if text == 'حذف الاوامر المضافه' or text == 'مسح الاوامر المضافه' then
+if text == 'حذف الاوامر المضافة' or text == 'مسح الاوامر المضافة' then
 if Constructor(msg) then 
 local list = database:smembers(bot_id..'List:Cmd:Group:New'..msg.chat_id_)
 for k,v in pairs(list) do
 database:del(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..':'..v)
 database:del(bot_id..'List:Cmd:Group:New'..msg.chat_id_)
 end
-send(msg.chat_id_, msg.id_,' 🇸🇦︙تم ازالة جميع الاوامر المضافه')  
+send(msg.chat_id_, msg.id_,' 🇸🇦︙تم ازالة جميع الاوامر المضافة')  
 end
 end
 if text == 'اضف امر' and Constructor(msg) then
@@ -3187,30 +3187,30 @@ tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,dat
 send(msg.chat_id_, msg.id_,' 🇸🇦︙بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'labban1')..') \n 🇸🇦︙تـم فتح الفيديو ')
 end,nil)   
 end
-if text == 'قفل المتحركه' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+if text == 'قفل المتحركة' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
 database:set(bot_id.."lock:Animation"..msg.chat_id_,'del')  
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,' 🇸🇦︙بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'labban1')..') \n 🇸🇦︙تـم قفـل المتحركه ')
+send(msg.chat_id_, msg.id_,' 🇸🇦︙بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'labban1')..') \n 🇸🇦︙تـم قفـل المتحركة ')
 end,nil)   
-elseif text == 'قفل المتحركه بالتقييد' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+elseif text == 'قفل المتحركة بالتقييد' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
 database:set(bot_id.."lock:Animation"..msg.chat_id_,'ked')  
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,' 🇸🇦︙بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'labban1')..') \n 🇸🇦︙تـم قفـل المتحركه بالتقييد ')
+send(msg.chat_id_, msg.id_,' 🇸🇦︙بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'labban1')..') \n 🇸🇦︙تـم قفـل المتحركة بالتقييد ')
 end,nil)   
-elseif text == 'قفل المتحركه بالكتم' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+elseif text == 'قفل المتحركة بالكتم' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
 database:set(bot_id.."lock:Animation"..msg.chat_id_,'ktm')  
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,' 🇸🇦︙بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'labban1')..') \n 🇸🇦︙تـم قفـل المتحركه بالكتم ')
+send(msg.chat_id_, msg.id_,' 🇸🇦︙بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'labban1')..') \n 🇸🇦︙تـم قفـل المتحركة بالكتم ')
 end,nil)   
-elseif text == 'قفل المتحركه بالطرد' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+elseif text == 'قفل المتحركة بالطرد' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
 database:set(bot_id.."lock:Animation"..msg.chat_id_,'kick')  
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,' 🇸🇦︙بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'labban1')..') \n 🇸🇦︙تـم قفـل المتحركه بالطرد ')
+send(msg.chat_id_, msg.id_,' 🇸🇦︙بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'labban1')..') \n 🇸🇦︙تـم قفـل المتحركة بالطرد ')
 end,nil)   
-elseif text == 'فتح المتحركه' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+elseif text == 'فتح المتحركة' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
 database:del(bot_id.."lock:Animation"..msg.chat_id_)  
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,' 🇸🇦︙بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'labban1')..') \n 🇸🇦︙تـم فتح المتحركه ')
+send(msg.chat_id_, msg.id_,' 🇸🇦︙بواسطه » ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'labban1')..') \n 🇸🇦︙تـم فتح المتحركة ')
 end,nil)   
 end
 if text == 'قفل الالعاب' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
@@ -3842,7 +3842,7 @@ if text == "all" or text == "@all" and CoSu(msg) then
 if not database:get(bot_id..'Cick:all'..msg.chat_id_) then
 if database:get(bot_id.."MODE7:all:Time"..msg.chat_id_..':'..msg.sender_user_id_) then  
 return 
-send(msg.chat_id_, msg.id_,"انتظر دقيقه من فضلك")
+send(msg.chat_id_, msg.id_,"انتظر دقيقة من فضلك")
 end
 database:setex(bot_id..'MODE7:all:Time'..msg.chat_id_..':'..msg.sender_user_id_,300,true)
 tdcli_function({ID="GetChannelFull",channel_id_ = msg.chat_id_:gsub('-100','')},function(argg,dataa) 
@@ -6874,16 +6874,16 @@ if TextEnd[3] == 'يوم' then
 Time_Restrict = TextEnd[2]:match('(%d+)')
 Time = Time_Restrict * 86400
 end
-if TextEnd[3] == 'ساعه' then
+if TextEnd[3] == 'ساعة' then
 Time_Restrict = TextEnd[2]:match('(%d+)')
 Time = Time_Restrict * 3600
 end
-if TextEnd[3] == 'دقيقه' then
+if TextEnd[3] == 'دقيقة' then
 Time_Restrict = TextEnd[2]:match('(%d+)')
 Time = Time_Restrict * 60
 end
-TextEnd[3] = TextEnd[3]:gsub('دقيقه',"دقايق") 
-TextEnd[3] = TextEnd[3]:gsub('ساعه',"ساعات") 
+TextEnd[3] = TextEnd[3]:gsub('دقيقة',"دقايق") 
+TextEnd[3] = TextEnd[3]:gsub('ساعة',"ساعات") 
 TextEnd[3] = TextEnd[3]:gsub("يوم","ايام") 
 if Can_or_NotCan(result.sender_user_id_, msg.chat_id_) then
 send(msg.chat_id_, msg.id_, "\n 🇸🇦︙عذرا لا تستطيع كتم ( "..Rutba(result.sender_user_id_,msg.chat_id_).." )")
@@ -6913,16 +6913,16 @@ if TextEnd[3] == 'يوم' then
 Time_Restrict = TextEnd[2]:match('(%d+)')
 Time = Time_Restrict * 86400
 end
-if TextEnd[3] == 'ساعه' then
+if TextEnd[3] == 'ساعة' then
 Time_Restrict = TextEnd[2]:match('(%d+)')
 Time = Time_Restrict * 3600
 end
-if TextEnd[3] == 'دقيقه' then
+if TextEnd[3] == 'دقيقة' then
 Time_Restrict = TextEnd[2]:match('(%d+)')
 Time = Time_Restrict * 60
 end
-TextEnd[3] = TextEnd[3]:gsub('دقيقه',"دقايق") 
-TextEnd[3] = TextEnd[3]:gsub('ساعه',"ساعات") 
+TextEnd[3] = TextEnd[3]:gsub('دقيقة',"دقايق") 
+TextEnd[3] = TextEnd[3]:gsub('ساعة',"ساعات") 
 TextEnd[3] = TextEnd[3]:gsub("يوم","ايام") 
 if Can_or_NotCan(result.id_, msg.chat_id_) then
 send(msg.chat_id_, msg.id_, "\n 🇸🇦︙عذرا لا تستطيع كتم ( "..Rutba(result.id_,msg.chat_id_).." )")
@@ -7122,16 +7122,16 @@ if TextEnd[3] == 'يوم' then
 Time_Restrict = TextEnd[2]:match('(%d+)')
 Time = Time_Restrict * 86400
 end
-if TextEnd[3] == 'ساعه' then
+if TextEnd[3] == 'ساعة' then
 Time_Restrict = TextEnd[2]:match('(%d+)')
 Time = Time_Restrict * 3600
 end
-if TextEnd[3] == 'دقيقه' then
+if TextEnd[3] == 'دقيقة' then
 Time_Restrict = TextEnd[2]:match('(%d+)')
 Time = Time_Restrict * 60
 end
-TextEnd[3] = TextEnd[3]:gsub('دقيقه',"دقايق") 
-TextEnd[3] = TextEnd[3]:gsub('ساعه',"ساعات") 
+TextEnd[3] = TextEnd[3]:gsub('دقيقة',"دقايق") 
+TextEnd[3] = TextEnd[3]:gsub('ساعة',"ساعات") 
 TextEnd[3] = TextEnd[3]:gsub("يوم","ايام") 
 if Can_or_NotCan(result.sender_user_id_, msg.chat_id_) then
 send(msg.chat_id_, msg.id_, "\n 🇸🇦︙عذرا لا تستطيع تقيد ( "..Rutba(result.sender_user_id_,msg.chat_id_).." )")
@@ -7161,16 +7161,16 @@ if TextEnd[3] == 'يوم' then
 Time_Restrict = TextEnd[2]:match('(%d+)')
 Time = Time_Restrict * 86400
 end
-if TextEnd[3] == 'ساعه' then
+if TextEnd[3] == 'ساعة' then
 Time_Restrict = TextEnd[2]:match('(%d+)')
 Time = Time_Restrict * 3600
 end
-if TextEnd[3] == 'دقيقه' then
+if TextEnd[3] == 'دقيقة' then
 Time_Restrict = TextEnd[2]:match('(%d+)')
 Time = Time_Restrict * 60
 end
-TextEnd[3] = TextEnd[3]:gsub('دقيقه',"دقايق") 
-TextEnd[3] = TextEnd[3]:gsub('ساعه',"ساعات") 
+TextEnd[3] = TextEnd[3]:gsub('دقيقة',"دقايق") 
+TextEnd[3] = TextEnd[3]:gsub('ساعة',"ساعات") 
 TextEnd[3] = TextEnd[3]:gsub("يوم","ايام") 
 if Can_or_NotCan(result.id_, msg.chat_id_) then
 send(msg.chat_id_, msg.id_, "\n 🇸🇦︙عذرا لا تستطيع تقيد ( "..Rutba(result.id_,msg.chat_id_).." )")
@@ -7928,7 +7928,7 @@ local text =
 '\n'..' 🇸🇦︙المنشورات » { '..lock_spam..
 ' }\n'..' 🇸🇦︙الكيبورد » { '..lock_inlin..
 ' }\n'..' 🇸🇦︙الاغاني » { '..lock_vico..
-' }\n'..' 🇸🇦︙المتحركه » { '..lock_gif..
+' }\n'..' 🇸🇦︙المتحركة » { '..lock_gif..
 ' }\n'..' 🇸🇦︙الملفات » { '..lock_file..
 ' }\n'..' 🇸🇦︙الدردشة » { '..lock_text..
 ' }\n'..' 🇸🇦︙الفيديو » { '..lock_ved..
@@ -8285,7 +8285,7 @@ end
 if b.content_.animation_.animation_ then
 local idanimation = b.content_.animation_.animation_.persistent_id_
 database:sadd(bot_id.."filteranimation"..msg.chat_id_,idanimation)
-text = 'المتحركه'
+text = 'المتحركة'
 send(msg.chat_id_, msg.id_,textt..'( '..text..' ) بنجاح لن يتم ارسالةا مجددا')  
 return false
 end
@@ -8312,7 +8312,7 @@ end
 if b.content_.animation_.animation_ then
 local idanimation = b.content_.animation_.animation_.persistent_id_
 database:srem(bot_id.."filteranimation"..msg.chat_id_,idanimation)
-text = 'المتحركه'
+text = 'المتحركة'
 send(msg.chat_id_, msg.id_,textt..'( '..text..' ) بنجاح يمكنهم الارسال الان')  
 return false
 end
@@ -8583,10 +8583,10 @@ end
 if text == 'الصلاحيات' and Mod(msg) then 
 local list = database:smembers(bot_id..'Coomds'..msg.chat_id_)
 if #list == 0 then
-send(msg.chat_id_, msg.id_,' 🇸🇦︙لا توجد صلاحيات مضافه')
+send(msg.chat_id_, msg.id_,' 🇸🇦︙لا توجد صلاحيات مضافة')
 return false
 end
-t = "\n 🇸🇦︙قائمة الصلاحيات المضافه \n⋆ ┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉ ⋆\n"
+t = "\n 🇸🇦︙قائمة الصلاحيات المضافة \n⋆ ┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉ ⋆\n"
 for k,v in pairs(list) do
 var = database:get(bot_id.."Comd:New:rt:bot:"..v..msg.chat_id_)
 if var then
@@ -9336,7 +9336,7 @@ local list = database:smembers(bot_id.."List:Rd:Sudo")
 text = "\n🇸🇦︙قائمة ردود المطور \n — — — — — — — — —\n"
 for k,v in pairs(list) do
 if database:get(bot_id.."Add:Rd:Sudo:Gif"..v) then
-db = "متحركه 🎭"
+db = "متحركة 🎭"
 elseif database:get(bot_id.."Add:Rd:Sudo:vico"..v) then
 db = "بصمه 📢"
 elseif database:get(bot_id.."Add:Rd:Sudo:stekr"..v) then
@@ -9438,7 +9438,7 @@ return false
 end
 if text and text:match("^(.*)$") then
 if database:get(bot_id.."Set:Rd"..msg.sender_user_id_..":"..msg.chat_id_) == "true" then
-send(msg.chat_id_, msg.id_, '🇸🇦︙الان ارسل الرد الذي تريد اضافته \n🇸🇦︙قد يكون (ملف - فديو - نص - ملصق - بصمه - متحركه )\n🇸🇦︙يمكنك اضافه الى النص :\n🇸🇦︙🌐 `#username` > معرف المستخدم\n🇸🇦︙📨 `#msgs` > عدد رسائل المستخدم\n🇸🇦︙📎 `#name` > اسم المستخدم\n🇸🇦︙🆔 `#id` > ايدي المستخدم\n🇸🇦︙🎖 `#stast` > رتبه المستخدم \n🇸🇦︙📝 `#edit` > عدد السحكات ')
+send(msg.chat_id_, msg.id_, '🇸🇦︙الان ارسل الرد الذي تريد اضافته \n🇸🇦︙قد يكون (ملف - فديو - نص - ملصق - بصمه - متحركة )\n🇸🇦︙يمكنك اضافه الى النص :\n🇸🇦︙🌐 `#username` > معرف المستخدم\n🇸🇦︙📨 `#msgs` > عدد رسائل المستخدم\n🇸🇦︙📎 `#name` > اسم المستخدم\n🇸🇦︙🆔 `#id` > ايدي المستخدم\n🇸🇦︙🎖 `#stast` > رتبه المستخدم \n🇸🇦︙📝 `#edit` > عدد السحكات ')
 database:set(bot_id.."Set:Rd"..msg.sender_user_id_..":"..msg.chat_id_, "true1")
 database:set(bot_id.."Text:Sudo:Bot"..msg.sender_user_id_..":"..msg.chat_id_, text)
 database:sadd(bot_id.."List:Rd:Sudo", text)
@@ -9573,7 +9573,7 @@ local list = database:smembers(bot_id.."List:Manager"..msg.chat_id_.."")
 text = "🇸🇦︙قائمه ردود المدير \n⋆ ┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉ ⋆\n"
 for k,v in pairs(list) do
 if database:get(bot_id.."Add:Rd:Manager:Gif"..v..msg.chat_id_) then
-db = "متحركه 🎭"
+db = "متحركة 🎭"
 elseif database:get(bot_id.."Add:Rd:Manager:Vico"..v..msg.chat_id_) then
 db = "بصمه 📢"
 elseif database:get(bot_id.."Add:Rd:Manager:Stekrs"..v..msg.chat_id_) then
@@ -9674,7 +9674,7 @@ return false
 end
 if text and text:match("^(.*)$") then
 if database:get(bot_id.."Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_) == "true" then
-send(msg.chat_id_, msg.id_, '🇸🇦︙الان ارسل الرد الذي تريد اضافته \n🇸🇦︙قد يكون (ملف - فديو - نص - ملصق - بصمه - متحركه )\n🇸🇦︙يمكنك اضافه الى النص :\n🇸🇦︙🌐 `#username` > معرف المستخدم\n🇸🇦︙📨 `#msgs` > عدد رسائل المستخدم\n🇸🇦︙📎 `#name` > اسم المستخدم\n🇸🇦︙🆔 `#id` > ايدي المستخدم\n🇸🇦︙🎖 `#stast` > رتبه المستخدم \n🇸🇦︙📝 `#edit` > عدد السحكات ')
+send(msg.chat_id_, msg.id_, '🇸🇦︙الان ارسل الرد الذي تريد اضافته \n🇸🇦︙قد يكون (ملف - فديو - نص - ملصق - بصمه - متحركة )\n🇸🇦︙يمكنك اضافه الى النص :\n🇸🇦︙🌐 `#username` > معرف المستخدم\n🇸🇦︙📨 `#msgs` > عدد رسائل المستخدم\n🇸🇦︙📎 `#name` > اسم المستخدم\n🇸🇦︙🆔 `#id` > ايدي المستخدم\n🇸🇦︙🎖 `#stast` > رتبه المستخدم \n🇸🇦︙📝 `#edit` > عدد السحكات ')
 database:set(bot_id.."Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_,"true1")
 database:set(bot_id.."Text:Manager"..msg.sender_user_id_..":"..msg.chat_id_, text)
 database:del(bot_id.."Add:Rd:Manager:Gif"..text..msg.chat_id_)   
@@ -9952,8 +9952,8 @@ end
 end
 -- عود اخمط وهوبز ع العالم قول تطويري ..
 
-if text == "الساعه" then
-local ramsesj20 = "\n الساعه الان : "..os.date("%I:%M%p")
+if text == "الساعة" then
+local ramsesj20 = "\n الساعة الان : "..os.date("%I:%M%p")
 send(msg.chat_id_, msg.id_,ramsesj20)
 end
 
@@ -11355,7 +11355,7 @@ local Teext =[[
 🇸🇦︙الشارحه
 🇸🇦︙التعديل
 🇸🇦︙التثبيت
-🇸🇦︙المتحركه
+🇸🇦︙المتحركة
 🇸🇦︙الملفات
 🇸🇦︙الصور
 🇸🇦︙التفليش
@@ -11555,7 +11555,7 @@ local Teext =[[
 ⋆ ┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉ ⋆
 🇸🇦︙حذف  امر + الامر القديم  
 ⋆ ┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉ ⋆
-🇸🇦︙الاوامر المضافه ( لعرض الاوامر المضافه ) 
+🇸🇦︙الاوامر المضافة ( لعرض الاوامر المضافة ) 
 ⋆ ┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉ ⋆ٴ
 ꙳. [dev yousef](t.me/labban1)
 ]]
@@ -11672,13 +11672,13 @@ local Teext =[[
 🇸🇦︙تنزيل الكل
 🇸🇦︙تنزيل جميع الرتب
 🇸🇦︙منع + برد
-🇸🇦︙~ الصور + متحركه + ملصق ~
+🇸🇦︙~ الصور + متحركة + ملصق ~
 🇸🇦︙حظر ~ كتم ~ تقيد ~ طرد
 🇸🇦︙المحظورين ~ المكتومين ~ المقيدين
 🇸🇦︙الغاء كتم + حظر + تقيد ~ بالرد و معرف و ايدي
-🇸🇦︙تقيد ~ كتم + الرقم + ساعه
+🇸🇦︙تقيد ~ كتم + الرقم + ساعة
 🇸🇦︙تقيد ~ كتم + الرقم + يوم
-🇸🇦︙تقيد ~ كتم + الرقم + دقيقه
+🇸🇦︙تقيد ~ كتم + الرقم + دقيقة
 🇸🇦︙تثبيت ~ الغاء تثبيت
 🇸🇦︙الترحيب
 🇸🇦︙الغاء تثبيت الكل
@@ -11692,7 +11692,7 @@ local Teext =[[
 🇸🇦︙عدد القروب
 🇸🇦︙ردود المدير
 🇸🇦︙اسم بوت + الرتبه
-🇸🇦︙الاوامر المضافه
+🇸🇦︙الاوامر المضافة
 🇸🇦︙وضع توحيد + توحيد
 🇸🇦︙تعين عدد الكتم + رقم
 🇸🇦︙كتم اسم + اسم
@@ -11703,7 +11703,7 @@ local Teext =[[
 🇸🇦︙نسبة رجوله
 🇸🇦︙نسبة الكره
 🇸🇦︙نسبة الانوثة
-🇸🇦︙الساعه
+🇸🇦︙الساعة
 🇸🇦︙التاريخ
 ⋆ ┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉ ⋆ٴ
 ꙳. [dev yousef](t.me/labban1)
@@ -11949,7 +11949,7 @@ end
 if Text == '/help10' then
 local help_text = database:get(bot_id..'help10_text')
 local Teext =[[
-🎒∫𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝚁𝙳𝙴𝚁𝚂 .
+أوامر الأعضاء
 🇸🇦︙اهلا بك عزيزي ✓ .
 🇸🇦︙اوامر الاعضاء كالتالي ↓
 ⋆ ┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉ ⋆
