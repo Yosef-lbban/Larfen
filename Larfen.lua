@@ -487,7 +487,7 @@ send(msg.chat_id_, msg.id_,NameUserr.."\n"..text)
 return false
 end
 else
-send(msg.chat_id_, msg.id_,"🇸🇦︙الحساب محذوف يرجى استخدام الامر بصوره صحيحه")
+send(msg.chat_id_, msg.id_,"🇸🇦︙الحساب محذوف يرجى استخدام الامر بصورة صحيحه")
 end
 end,nil)   
 end 
@@ -656,7 +656,7 @@ end
 function Addjpg(msg,chat,ID_FILE,File_Name)
 local File = json:decode(https.request('https://api.telegram.org/bot'.. token..'/getfile?file_id='..ID_FILE)) 
 download_to_file('https://api.telegram.org/file/bot'..token..'/'..File.result.file_path,File_Name) 
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil,'./'..File_Name,'تم تحويل الملصق الى صوره')     
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil,'./'..File_Name,'تم تحويل الملصق الى صورة')     
 os.execute('rm -rf ./'..File_Name) 
 end
 function Addvoi(msg,chat,vi,ty)
@@ -1313,7 +1313,7 @@ end
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه")
+send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه")
 return false 
 end      
 database:sadd(bot_id..'Sudo:User', result.id_)
@@ -2134,9 +2134,9 @@ for k,v in pairs(filter) do
 if v == msg.content_.photo_.id_ then
 tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
 if data.username_ ~= false then
-send(msg.chat_id_,0," 🇸🇦︙عذرا » {[@"..data.username_.."]}\n 🇸🇦︙عذرا تم منع الصوره \n" ) 
+send(msg.chat_id_,0," 🇸🇦︙عذرا » {[@"..data.username_.."]}\n 🇸🇦︙عذرا تم منع الصورة \n" ) 
 else
-send(msg.chat_id_,0," 🇸🇦︙عذرا » {["..data.first_name_.."](T.ME/labban1)}\n 🇸🇦︙عذرا تم منع الصوره \n") 
+send(msg.chat_id_,0," 🇸🇦︙عذرا » {["..data.first_name_.."](T.ME/labban1)}\n 🇸🇦︙عذرا تم منع الصورة \n") 
 end
 end,nil)   
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})       
@@ -2607,11 +2607,11 @@ if data.profile_photo_.big_.persistent_id_ then
 if LarfenChengPhoto ~= data.profile_photo_.big_.persistent_id_ then 
 local Text = {
   "شكو غيرت صورتك يلصاك",
-  "منور طالع حلو ع صوره جديده",
+  "منور طالع حلو ع صورة جديده",
   "ها يول شو غيرت صورتك😍😂",
   "شكو غيرت صورتك شنو قطيت وحده جديده 😹😹🌚",
   "شو غيرت صورتك شنو تعاركت ويه الحب ؟😹🌞",
-  "شكو غيرت الصوره شسالفه ؟؟ 🤔🌞",
+  "شكو غيرت الصورة شسالفه ؟؟ 🤔🌞",
 }
 send(msg.chat_id_, msg.id_,Text[math.random(#Text)])
 end  
@@ -3587,7 +3587,7 @@ end
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه")   
+send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه")   
 return false 
 end      
 if tonumber(result.id_) == tonumber(bot_id) then  
@@ -3686,7 +3686,7 @@ end
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه")   
+send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه")   
 return false 
 end      
 if tonumber(result.id_) == tonumber(bot_id) then  
@@ -3907,7 +3907,7 @@ end
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_,"⚠| عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
+send(msg.chat_id_,msg.id_,"⚠| عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه !")   
 return false 
 end      
 database:sadd(bot_id..'Sudo:User', result.id_)
@@ -4091,7 +4091,7 @@ end
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه")   
+send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه")   
 return false 
 end      
 database:sadd(bot_id..'CoSu'..msg.chat_id_, result.id_)
@@ -4242,7 +4242,7 @@ end
 if #list == 0 then
 t = "🇸🇦︙ماكو منششئين يشوفولك جاره"
 end
-Reply_Status(msg,msg.sender_user_id_,"reply","🇸🇦︙قام بنشر صوره اباحيه\n"..t)  
+Reply_Status(msg,msg.sender_user_id_,"reply","🇸🇦︙قام بنشر صورة اباحيه\n"..t)  
 DeleteMessage(msg.chat_id_,{[0] = tonumber(msg.id_),msg.id_})   
 end   
 end
@@ -4384,7 +4384,7 @@ end
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه")   
+send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه")   
 return false 
 end      
 database:sadd(bot_id..'Basic:Constructor'..msg.chat_id_, result.id_)
@@ -4584,7 +4584,7 @@ end
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه")   
+send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه")   
 return false 
 end      
 database:sadd(bot_id..'Constructor'..msg.chat_id_, result.id_)
@@ -4764,7 +4764,7 @@ end
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه")   
+send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه")   
 return false 
 end      
 database:sadd(bot_id..'Manager'..msg.chat_id_, result.id_)
@@ -4888,7 +4888,7 @@ local username = text:match("^رفع مطور ثانوي @(.*)$")
 function Function_Larfen(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_,"🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
+send(msg.chat_id_,msg.id_,"🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه !")   
 return false 
 end      
 database:sadd(bot_id.."Dev:mode:2", result.id_)
@@ -5059,7 +5059,7 @@ end
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه")   
+send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه")   
 return false 
 end      
 database:sadd(bot_id..'Mod:User'..msg.chat_id_, result.id_)
@@ -5251,7 +5251,7 @@ end
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه")   
+send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه")   
 return false 
 end      
 database:sadd(bot_id..'MODE7:MN:TF'..msg.chat_id_, result.id_)
@@ -5434,7 +5434,7 @@ send(msg.chat_id_, msg.id_, '\n 🇸🇦︙عذرا لا تستطيع طرد ( '
 else
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_id_ = result.id_, status_ = { ID = "ChatMemberStatusKicked" },},function(arg,data) 
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_,"⚠| عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
+send(msg.chat_id_,msg.id_,"⚠| عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه !")   
 return false 
 end      
 if (data and data.code_ and data.code_ == 400 and data.message_ == "CHAT_ADMIN_REQUIRED") then 
@@ -5587,7 +5587,7 @@ end
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه")   
+send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه")   
 return false 
 end      
 database:sadd(bot_id..'Special:User'..msg.chat_id_, result.id_)
@@ -6610,7 +6610,7 @@ send(msg.chat_id_, msg.id_, '\n 🇸🇦︙عذرا لا تستطيع حظر ( '
 else
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_id_ = result.id_, status_ = { ID = "ChatMemberStatusKicked" },},function(arg,data) 
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه")   
+send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه")   
 return false 
 end      
 if (data and data.code_ and data.code_ == 400 and data.message_ == "CHAT_ADMIN_REQUIRED") then 
@@ -6851,7 +6851,7 @@ if Can_or_NotCan(result.id_, msg.chat_id_) == true then
 send(msg.chat_id_, msg.id_, '\n 🇸🇦︙عذرا لا تستطيع كتم ( '..Rutba(result.id_,msg.chat_id_)..' )')
 else
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه")   
+send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه")   
 return false 
 end      
 database:sadd(bot_id..'Muted:User'..msg.chat_id_, result.id_)
@@ -6906,7 +6906,7 @@ local TextEnd = {string.match(text, "^(كتم) (%d+) (.*) @(.*)$")}
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه")   
+send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه")   
 return false 
 end      
 if TextEnd[3] == 'يوم' then
@@ -7094,7 +7094,7 @@ send(msg.chat_id_, msg.id_, " 🇸🇦︙لا تسطيع تقيد البوت ")
 return false 
 end
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه")   
+send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه")   
 return false 
 end      
 if Can_or_NotCan(result.id_, msg.chat_id_) then
@@ -7154,7 +7154,7 @@ local TextEnd = {string.match(text, "^(تقيد) (%d+) (.*) @(.*)$")}
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه")   
+send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه")   
 return false 
 end      
 if TextEnd[3] == 'يوم' then
@@ -7460,7 +7460,7 @@ end
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
+send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه !")   
 return false 
 end      
 usertext = '\n 🇸🇦︙العضو » ['..result.title_..'](t.me/'..(username or 'labban1')..')'
@@ -7500,7 +7500,7 @@ end
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
+send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه !")   
 return false 
 end      
 usertext = '\n 🇸🇦︙العضو » ['..result.title_..'](t.me/'..(username or 'labban1')..')'
@@ -7542,7 +7542,7 @@ end
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
+send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه !")   
 return false 
 end      
 usertext = '\n 🇸🇦︙العضو » ['..result.title_..'](t.me/'..(username or 'labban1')..')'
@@ -7582,7 +7582,7 @@ end
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_,"⚠¦ عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
+send(msg.chat_id_,msg.id_,"⚠¦ عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه !")   
 return false 
 end      
 usertext = '\n 🇸🇦︙العضو » ['..result.title_..'](t.me/'..(username or 'labban1')..')'
@@ -7954,7 +7954,7 @@ local text =
 ' }\n'..' 🇸🇦︙ردود المدير » { '..rdmder..
 ' }\n'..' 🇸🇦︙ردود المطور » { '..rdsudo..
 ' }\n'..' 🇸🇦︙الايدي » { '..idgp..
-' }\n'..' 🇸🇦︙الايدي بالصوره » { '..idph..
+' }\n'..' 🇸🇦︙الايدي بالصورة » { '..idph..
 ' }\n'..' 🇸🇦︙الرفع » { '..setadd..
 ' }\n'..' 🇸🇦︙الحظر » { '..banm..' }\n\n⋆ ┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉ ⋆\n 🇸🇦︙قناة سورس fevyousef ↓\n [dev yousef](t.me/labban1) \n'
 send(msg.chat_id_, msg.id_,text)     
@@ -8092,17 +8092,17 @@ end,nil)
 end
 end
 ---------------------
-if text == "تفعيل صورتي" or text == 'تفعيل الصوره' then
+if text == "تفعيل صورتي" or text == 'تفعيل الصورة' then
 if Constructor(msg) then  
 database:set(bot_id.."my_photo:status"..msg.chat_id_,true) 
-send(msg.chat_id_, msg.id_," 🇸🇦︙تم تفعيل الصوره") 
+send(msg.chat_id_, msg.id_," 🇸🇦︙تم تفعيل الصورة") 
 return false  
 end
 end
-if text == "تعطيل الصوره" or text == 'تعطيل صورتي' then
+if text == "تعطيل الصورة" or text == 'تعطيل صورتي' then
 if Constructor(msg) then  
 database:del(bot_id.."my_photo:status"..msg.chat_id_) 
-send(msg.chat_id_, msg.id_," 🇸🇦︙تم تعطيل الصوره") 
+send(msg.chat_id_, msg.id_," 🇸🇦︙تم تعطيل الصورة") 
 return false end
 end
 if text == "الرابط" then 
@@ -8142,12 +8142,12 @@ database:del(bot_id.."Private:Group:Link"..msg.chat_id_)
 return false      
 end
 end
-if text and text:match("^ضع صوره") and Mod(msg) and msg.reply_to_message_id_ == 0 then  
+if text and text:match("^ضع صورة") and Mod(msg) and msg.reply_to_message_id_ == 0 then  
 database:set(bot_id..'Change:Chat:Photo'..msg.chat_id_..':'..msg.sender_user_id_,true) 
-send(msg.chat_id_, msg.id_,' 🇸🇦︙ارسل لي الصوره') 
+send(msg.chat_id_, msg.id_,' 🇸🇦︙ارسل لي الصورة') 
 return false
 end
-if text == "حذف الصوره" or text == "مسح الصوره" then 
+if text == "حذف الصورة" or text == "مسح الصورة" then 
 if Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -8278,7 +8278,7 @@ end
 if b.content_.ID == "MessagePhoto" then
 local photo = b.content_.photo_.id_
 database:sadd(bot_id.."filterphoto"..msg.chat_id_,photo)
-text = 'الصوره'
+text = 'الصورة'
 send(msg.chat_id_, msg.id_,textt..'( '..text..' ) بنجاح لن يتم ارسالةا مجددا')  
 return false
 end
@@ -8305,7 +8305,7 @@ end
 if b.content_.ID == "MessagePhoto" then
 local photo = b.content_.photo_.id_
 database:srem(bot_id.."filterphoto"..msg.chat_id_,photo)
-text = 'الصوره'
+text = 'الصورة'
 send(msg.chat_id_, msg.id_,textt..'( '..text..' ) بنجاح يمكنهم الارسال الان')  
 return false
 end
@@ -8392,7 +8392,7 @@ database:setex(bot_id.."CHENG:ID"..msg.chat_id_..""..msg.sender_user_id_,240,tru
 local Text= [[
  🇸🇦︙ارسل الان النص
  🇸🇦︙يمكنك اضافه :
- 🇸🇦︙`#rdphoto` ~⪼ تعليق الصوره
+ 🇸🇦︙`#rdphoto` ~⪼ تعليق الصورة
  🇸🇦︙`#username` ~⪼ اسم 
  🇸🇦︙`#msgs` ~⪼ عدد رسائل 
  🇸🇦︙`#photos` ~⪼ عدد صور 
@@ -9344,7 +9344,7 @@ db = "ملصق 🏷"
 elseif database:get(bot_id.."Add:Rd:Sudo:Text"..v) then
 db = "رسالة ✉"
 elseif database:get(bot_id.."Add:Rd:Sudo:Photo"..v) then
-db = "صوره 👤"
+db = "صورة 👤"
 elseif database:get(bot_id.."Add:Rd:Sudo:Video"..v) then
 db = "فيديو 📹"
 elseif database:get(bot_id.."Add:Rd:Sudo:File"..v) then
@@ -9581,7 +9581,7 @@ db = "ملصق 🏷"
 elseif database:get(bot_id.."Add:Rd:Manager:Text"..v..msg.chat_id_) then
 db = "رسالة ✉"
 elseif database:get(bot_id.."Add:Rd:Manager:Photo"..v..msg.chat_id_) then
-db = "صوره 👤"
+db = "صورة 👤"
 elseif database:get(bot_id.."Add:Rd:Manager:Video"..v..msg.chat_id_) then
 db = "فيديو 📹"
 elseif database:get(bot_id.."Add:Rd:Manager:File"..v..msg.chat_id_) then
@@ -9832,7 +9832,7 @@ end
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
+send(msg.chat_id_,msg.id_," 🇸🇦︙عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصورة صحيحه !")   
 return false 
 end      
 usertext = '\n 🇸🇦︙العضو » ['..result.title_..'](t.me/'..(username or 'labban1')..')'
@@ -10183,21 +10183,21 @@ Text = '\n 🇸🇦︙بالتاكيد تم تعطيل الايدي'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تفعيل الايدي بالصوره' and Manager(msg) then   
+if text == 'تفعيل الايدي بالصورة' and Manager(msg) then   
 if database:get(bot_id..'Bot:Id:Photo'..msg.chat_id_)  then
 database:del(bot_id..'Bot:Id:Photo'..msg.chat_id_) 
 Text = '\n 🇸🇦︙تم تفعيل الايدي بالصور' 
 else
-Text = '\n 🇸🇦︙بالتاكيد تم تفعيل الايدي بالصوره'
+Text = '\n 🇸🇦︙بالتاكيد تم تفعيل الايدي بالصورة'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تعطيل الايدي بالصوره' and Manager(msg) then  
+if text == 'تعطيل الايدي بالصورة' and Manager(msg) then  
 if not database:get(bot_id..'Bot:Id:Photo'..msg.chat_id_)  then
 database:set(bot_id..'Bot:Id:Photo'..msg.chat_id_,true) 
-Text = '\n 🇸🇦︙تم تعطيل الايدي بالصوره' 
+Text = '\n 🇸🇦︙تم تعطيل الايدي بالصورة' 
 else
-Text = '\n 🇸🇦︙بالتاكيد تم تعطيل الايدي بالصوره'
+Text = '\n 🇸🇦︙بالتاكيد تم تعطيل الايدي بالصورة'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
@@ -10523,14 +10523,14 @@ end
 if text == "صورتي"  then
 local my_ph = database:get(bot_id.."my_photo:status"..msg.chat_id_)
 if not my_ph then
-send(msg.chat_id_, msg.id_," 🇸🇦︙الصوره معطله") 
+send(msg.chat_id_, msg.id_," 🇸🇦︙الصورة معطله") 
 return false  
 end
 local function getpro(extra, result, success)
 if result.photos_[0] then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_," 🇸🇦︙عدد صورك ~⪼ "..result.total_count_.." صوره‌‏", msg.id_, msg.id_, "md")
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_," 🇸🇦︙عدد صورك ~⪼ "..result.total_count_.." صورة‌‏", msg.id_, msg.id_, "md")
 else
-send(msg.chat_id_, msg.id_,'لا تمتلك صوره في حسابك', 1, 'md')
+send(msg.chat_id_, msg.id_,'لا تمتلك صورة في حسابك', 1, 'md')
   end end
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil)
 end
@@ -10662,7 +10662,7 @@ local modea = {
 " 🇸🇦︙فـدشـي عمـي",
 " 🇸🇦︙دغـيرهـا شبـي هـاذ",
 " 🇸🇦︙شهل الگيمر ",
-" 🇸🇦︙شهل الصوره تخمبش ",
+" 🇸🇦︙شهل الصورة تخمبش ",
 " 🇸🇦︙فديت الحلو ",
 " 🇸🇦︙بـبكن حـلك ",
 }
@@ -10705,7 +10705,7 @@ else
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
 send(msg.chat_id_, msg.id_,'[\n 🇸🇦︙ايديك ~⪼ '..msg.sender_user_id_..'\n 🇸🇦︙معرفك ~⪼ '..username..'\n 🇸🇦︙رتبتك ~⪼ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n 🇸🇦︙موقعك ~⪼ '..rtpa..'\n 🇸🇦︙تفاعلك ~⪼ '..Total_Msg(Msguser)..'\n 🇸🇦︙رسائلك ~⪼ '..Msguser..'\n 🇸🇦︙نسبة  تفاعلك ~⪼ '..string.sub(nspatfa, 1,5)..' %\n 🇸🇦︙التعديلات ~⪼ '..edit..'\n 🇸🇦︙نقاطك ~⪼ '..NUMPGAME..']\n')
 else
-send(msg.chat_id_, msg.id_, '\n 🇸🇦︙الصوره ~⪼ ليس لديك صور في حسابك'..'[\n 🇸🇦︙ايديك ~⪼ '..msg.sender_user_id_..'\n 🇸🇦︙معرفك ~⪼ '..username..'\n 🇸🇦︙رتبتك ~⪼ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n 🇸🇦︙موقعك ~⪼ '..rtpa..'\n 🇸🇦︙تفاعلك ~⪼ '..Total_Msg(Msguser)..'\n 🇸🇦︙رسائلك ~⪼ '..Msguser..'\n 🇸🇦︙نسبة تفاعلك ~⪼ '..string.sub(nspatfa, 1,5)..' %\n 🇸🇦︙التعديلات ~⪼ '..edit..'\n 🇸🇦︙نقاطك ~⪼ '..NUMPGAME..']\n')
+send(msg.chat_id_, msg.id_, '\n 🇸🇦︙الصورة ~⪼ ليس لديك صور في حسابك'..'[\n 🇸🇦︙ايديك ~⪼ '..msg.sender_user_id_..'\n 🇸🇦︙معرفك ~⪼ '..username..'\n 🇸🇦︙رتبتك ~⪼ '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n 🇸🇦︙موقعك ~⪼ '..rtpa..'\n 🇸🇦︙تفاعلك ~⪼ '..Total_Msg(Msguser)..'\n 🇸🇦︙رسائلك ~⪼ '..Msguser..'\n 🇸🇦︙نسبة تفاعلك ~⪼ '..string.sub(nspatfa, 1,5)..' %\n 🇸🇦︙التعديلات ~⪼ '..edit..'\n 🇸🇦︙نقاطك ~⪼ '..NUMPGAME..']\n')
 end 
 end
 end
@@ -11493,7 +11493,7 @@ local Teext =[[
 🇸🇦︙ترحيب
 🇸🇦︙قوانين
 🇸🇦︙رد متعدد 
-🇸🇦︙صوره
+🇸🇦︙صورة
 🇸🇦︙وصف
 🇸🇦︙تكرار + عدد
 ⋆ ┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉ ⋆ٴ
@@ -11662,7 +11662,7 @@ local Teext =[[
 🇸🇦︙الاوامر كالتالي ♻️ ↓
 ⋆ ┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉ ⋆
 🇸🇦︙استعاده الاوامر 
-🇸🇦︙تحويل كالاتي~⪼ بالرد على صوره او ملصق او صوت او بصمه بالامر ← تحويل 
+🇸🇦︙تحويل كالاتي~⪼ بالرد على صورة او ملصق او صوت او بصمه بالامر ← تحويل 
 🇸🇦︙صيح ~ تاك ~ المميزين : الادمنيه : المدراء : المنشئين : المنشئين الاساسين
 🇸🇦︙كشف القيود
 🇸🇦︙تعين الايدي
